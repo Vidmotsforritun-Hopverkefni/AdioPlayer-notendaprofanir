@@ -10,7 +10,27 @@
 ### Discord
   @GudniEmil
 
-forritið 
+
+### Virkni
+
+1. **Spóla áfram í lagi**: Notandi getur spólað áfram í lagi þegar hann er að hlusta á það.
+2. **Uploada lagi**: Notandi getur hlaðið upp lagi sem hann vill bæta við lagalistanum sínum.
+3. **Setja mynd á lagi**: Notandi getur bætt við mynd sem tengist lagi sem hann hefur uploadað.
+4. **Setja eigið nafn á lagið**: Notandi getur sett sitt eigið nafn á lagið og breytt því eftir þörfum.
+5. **Yfirlit af lögunum**: Notandinn getur skoðað yfirlit af lögunum í lagalistanum.
+6. **Eyða lagi**: Notandi getur eytt lagi úr lagalistanum.
+
+## Uppsetning
+
+Til að setja upp verkefnið locally:
+
+1. Sæktu verkefnið úr Github.
+2. Opnið það í Java forritunarumhverfi (t.d. IntelliJ, Eclipse).
+3. Keyrið `mvn clean install` til að byggja verkefnið.
+
+## Þróunaraðili
+
+Ábendingar og tillögur tilbúnar með þökkum fyrir!
   
 
 
