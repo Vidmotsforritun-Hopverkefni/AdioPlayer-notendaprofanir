@@ -24,7 +24,7 @@ public class File_management {
      * @return
      */
     public static File getFileAudio(){
-        FileChooser fileChooser = new FileChooser();
+        FileChooser fileChooser = createFileChooser();
         fileChooser.setTitle("Open Resource File");
         fileChooser.getExtensionFilters().addAll(
                 new FileChooser.ExtensionFilter("Audio Files", "*.wav", "*.mp3", "*.aac"),
@@ -42,8 +42,13 @@ public class File_management {
 
 
     }
+    public static FileChooser createFileChooser() {
+        FileChooser chooser = new FileChooser();
+        chooser.setInitialDirectory(new File(System.getProperty("user.dir")));
+        return chooser ;
+    }
     public static File getFileImg(){
-        FileChooser fileChooser = new FileChooser();
+        FileChooser fileChooser = createFileChooser();
         fileChooser.setTitle("Open Resource File");
 //        fileChooser.setInitialDirectory();
         System.out.println(fileChooser.getInitialDirectory() + " InitialDirectory");
