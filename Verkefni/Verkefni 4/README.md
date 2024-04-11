@@ -1,4 +1,5 @@
-# Verkefni 1
-***Spóla áfram í lagi:*** Notandi vil spóla lag áfram þegar hann er að hlusta á það. hann velur eitthvernn lagalista
+# Verkefni 4
+***Setja Nafn á Lag:*** Notandi getur haft þann möguleika að breyta nafninu á Laginu sem hann hefur hlaðið inn á Lagalistann sinn 
 ## gögn
-einginn
+Ein mynd til að sitja inn: "image1.jpg"
+Eitt mp3 skjal til að hlaða inn þegar það er verið að sitja inn nafnið: "sample-12s.mp3"
