@@ -9,6 +9,8 @@
   geg56@hi.is
 ### Discord
   @GudniEmil
+
+forritið 
   
 
 
