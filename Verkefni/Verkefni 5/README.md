@@ -1,4 +1,4 @@
-# Verkefni 1
-***Spóla áfram í lagi:*** Notandi vil spóla lag áfram þegar hann er að hlusta á það. hann velur eitthvernn lagalista
+# Verkefni 5
+***Eyða Lagi:*** Ef Notandi vill eyða lagi í lagalistanum sínum þá getur hann gert það með því að fara inn í lagalistan og ýta á                  edit til að síðan velja það lag sem notandinn vill eyða
 ## gögn
-einginn
+enginn
