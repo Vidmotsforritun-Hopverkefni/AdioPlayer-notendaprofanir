@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane layoutY="25.0" prefHeight="200.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <VBox fillWidth="false" layoutX="14.0" layoutY="15.0" spacing="15.0">
+            <children>
+                <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="1.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Name" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="5.0" />
+                            </HBox.margin>
+                     <padding>
+                        <Insets right="6.0" />
+                     </padding>
+                        </Label>
+                        <TextField fx:id="fxNafn" maxWidth="1.7976931348623157E308" promptText="Name of Song" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="1.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Image" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fxImage" maxWidth="1.7976931348623157E308" promptText="Image File Location" HBox.hgrow="ALWAYS" />
+                  <Button contentDisplay="CENTER" mnemonicParsing="false" onAction="#onImage" prefWidth="20.0" text="..." />
+                    </children>
+                </HBox>
+                <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="1.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Audio" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fxAudio" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" promptText="Audio File Location" HBox.hgrow="ALWAYS" />
+                  <Button maxWidth="20.0" mnemonicParsing="false" onAction="#onAudio" text="Button" />
+                    </children>
+                </HBox>
+            </children></VBox>
+    </content>
+    <headerText>
+        New Song
+    </headerText>
+    <graphic>
+        <ImageView fitHeight="101.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+
+        </ImageView>
+    </graphic>
+    <ButtonType fx:id="fxILagi" buttonData="OK_DONE" text="Í lagi" />
+    <ButtonType fx:id="fxHaettaVid" buttonData="CANCEL_CLOSE" text="Hætta við" />
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+   <header>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Label text="New Song">
+               <HBox.margin>
+                  <Insets />
+               </HBox.margin></Label>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="fxImageVieiw" accessibleRole="IMAGE_VIEW" alignment="CENTER" contentDisplay="CENTER" minHeight="100.0" minWidth="100.0" nodeOrientation="LEFT_TO_RIGHT" HBox.hgrow="NEVER">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </HBox>
+   </header>
+</DialogPane>

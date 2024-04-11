@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.image.*?>
+
+<DialogPane layoutY="25.0" prefHeight="200.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <VBox fillWidth="false" layoutX="14.0" layoutY="15.0" spacing="15.0">
+            <children>
+                <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="1.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Playlist Name" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="playlistNameField" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                    </children>
+                </HBox>
+                <HBox fillHeight="false" maxHeight="-Infinity" prefHeight="1.0" prefWidth="400.0" VBox.vgrow="ALWAYS">
+                    <children>
+                        <Label text="Image" HBox.hgrow="ALWAYS">
+                            <HBox.margin>
+                                <Insets right="10.0" />
+                            </HBox.margin>
+                        </Label>
+                        <TextField fx:id="fxImage" maxWidth="1.7976931348623157E308" HBox.hgrow="ALWAYS" />
+                        <Button contentDisplay="CENTER" mnemonicParsing="false"  prefWidth="20.0" text="..." />
+                    </children>
+                </HBox>
+            </children>
+        </VBox>
+    </content>
+    <headerText>
+        Add Playlist
+    </headerText>
+    <graphic>
+        <ImageView fx:id="imageView" fitHeight="101.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+            <!-- You can set a default image here if needed -->
+        </ImageView>
+    </graphic>
+    <ButtonType fx:id="OK_DONE" buttonData="OK_DONE" text="OK" />
+    <ButtonType fx:id="CANCEL_CLOSE" buttonData="CANCEL_CLOSE" text="Cancel" />
+    <padding>
+        <Insets left="10.0" />
+    </padding>
+</DialogPane>
