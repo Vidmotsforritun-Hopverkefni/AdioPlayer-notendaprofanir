@@ -10,8 +10,8 @@
 ### Discord
   @GudniEmil
 
-# is redy
-yes
+# is ready
+***yes***
 
 
 ### Virkni
