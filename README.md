@@ -10,6 +10,9 @@
 ### Discord
   @GudniEmil
 
+# is redy
+yes
+
 
 ### Virkni
 
