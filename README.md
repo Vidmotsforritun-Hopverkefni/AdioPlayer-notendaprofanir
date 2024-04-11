@@ -29,6 +29,7 @@ Til að setja upp verkefnið locally:
 1. Sæktu verkefnið úr Github.
 2. Opnið það í Java forritunarumhverfi í IntelliJ.
 3. Keyrið `mvn clean install` til að byggja verkefnið.
+4. gögninn eru í sklali [a relative link]()
 
 ## Þróunaraðili
 
