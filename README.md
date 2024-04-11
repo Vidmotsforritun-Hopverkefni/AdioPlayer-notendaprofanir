@@ -16,7 +16,7 @@
 1. **Spóla áfram í lagi**: Notandi getur spólað áfram í lagi þegar hann er að hlusta á það.
 2. **Uploada lagi**: Notandi getur hlaðið upp lagi sem hann vill bæta við lagalistanum sínum.
 3. **Setja mynd á lagi**: Notandi getur bætt við mynd á sama tíma og þú ert að setja Lag og að skýra lagið.
-4. **Setja eigið nafn á lagið**: Notandi getur sett sitt eigið nafn á lagið og breytt því eftir þörfum.
+4. **Setja eigið nafn á lagið**: Notandi getur sett sitt eigið nafn á lagið.
 5. **Eyða lagi**: Notandi getur eytt lagi úr lagalistanum.
 
 ## Uppsetning
