@@ -163,6 +163,10 @@ public class AddLagController {
 
                     File_management.copyFile(aukaPath,uuid+".mp3",songNew.songFilename, songNew.getName());
 
+                    lagNames = JsonFile_management.toNameList(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex());
+                    ObservableList<String> uuidList = JsonFile_management.toUuidList(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex());
+                    Lagalistar.addLag(uuidList.get(uuidList.size()-1));
+
                 }
 //                if(songNew.song != null){
 //                    songNew_old.songWrong = false;
@@ -179,8 +183,7 @@ public class AddLagController {
 //                TxtFile_management.addname(filename, lagalisti.getLagalistaIndex(), songNew.getName(), lagNames);
 //                JsonFile_management.addJson(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex(), songNew.getName());
 //                lagNames = TxtFile_management.getnames(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex());
-                lagNames = JsonFile_management.toNameList(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex());
-                Lagalistar.addLag(lagNames.get(lagNames.size()-1));
+
 //                System.out.println(lagalisti.getListi() + " hér er listinn");
 //                System.out.println(lagalisti.getAmount() + " hér er amount");
 

@@ -1,15 +1,14 @@
 package hi.vinnsla.audioplayer;
 import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
-import javafx.beans.Observable;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-import javafx.event.ActionEvent;
 
 import java.io.File;
 import java.io.IOException;
 import java.util.List;
 import java.util.UUID;
+import java.util.concurrent.atomic.AtomicReference;
 
 public class JsonFile_management {
     private static final String filename = "src/main/resources/hi/vidmot/audioplayer/media/Txt_(names)/hello.json";
@@ -139,7 +138,16 @@ public class JsonFile_management {
         }
     }
 
-    public static String removeJson(String path, String baseName, int index, int index2){
+    public static LagData getLag(ObservableList<LagData> lagDatalist, String uuid){
+        AtomicReference<LagData> res = new AtomicReference<>();
+        lagDatalist.forEach(lagData -> {
+            if(lagData.getUuid() == uuid){
+                res.set(lagData);
+            }
+        });
+        return res.get();
+    }
+    public static String removeJson(String path, String baseName, int index, String uuid){
         ObjectMapper objectMapper = new ObjectMapper();
         System.out.println(path +"/"+baseName+".json");
         if(index>=0){
@@ -155,12 +163,12 @@ public class JsonFile_management {
                 temp.addAll(listLagData);
 //                LagData lagData = new LagData(name, UUID.randomUUID().toString());
                 System.out.println("before: " + temp);
-                LagData lagData = temp.get(index2);
-                temp.remove(index2);
+//                LagData lagData = temp.get(index2);
+                temp.remove(getLag(temp, uuid));
 //                temp.re
                 System.out.println("after: " + temp);
                 vistaJson(temp, path + index + "/" + baseName + ".json");
-                return lagData.getUuid();
+                return uuid;
 
 
             } catch (IOException e) {
@@ -184,11 +192,10 @@ public class JsonFile_management {
                 temp.addAll(listLagData);
 //                LagData lagData = new LagData(name, UUID.randomUUID().toString());
                 System.out.println("before: " + temp);
-                LagData lagData = temp.get(index2);
-                temp.remove(index2);
+                temp.remove(getLag(temp, uuid));
                 System.out.println("after: " + temp);
                 vistaJson(temp, path +"/"+baseName+".json");
-                return lagData.getUuid();
+                return uuid;
 
 
 

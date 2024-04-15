@@ -234,8 +234,11 @@ public class ListiController implements ListiControllerInterface {
     @Override
     public void onHeim(ActionEvent actionEvent) {
         if(curr_lag != null){
-            curr_lag.getLag().seek(new Duration(0));
-            curr_lag.getLag().pause();
+            if(curr_lag.getLag() != null){
+                curr_lag.getLag().seek(new Duration(0));
+                curr_lag.getLag().pause();
+            }
+
         }
 
 //        fxListView.getItems().clear();
@@ -323,7 +326,7 @@ public class ListiController implements ListiControllerInterface {
 //        String uuid = JsonFile_management.removeJson(filename,"lagalisti", -1, 0);
         Lag selectedLag = fxListView.getSelectionModel().getSelectedItem();
         if (selectedLag != null) {
-            String uuid = JsonFile_management.removeJson(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex(), selectedLag.getIndex());
+            String uuid = JsonFile_management.removeJson(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex(), curr_lag.getUuid());
 //            String uuid = JsonFile_management.addJson(filename+"Lagalisti_","log", lagalisti.getLagalistaIndex(), songNew.getName());
             // Fjarlægja valinn hlut úr lista
             lagalisti.fjarlaegjaLag(selectedLag);
