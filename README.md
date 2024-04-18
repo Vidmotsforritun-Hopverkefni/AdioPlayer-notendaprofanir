@@ -28,7 +28,7 @@ Til að setja upp verkefnið locally:
 
 1. Sæktu verkefnið úr Github.
 2. Opnið það í Java forritunarumhverfi í IntelliJ.
-3. Keyrið `mvn clean install` til að byggja verkefnið.
+3. Keyrið `mvn run javafx` til að byggja verkefnið.
 4. gögninn eru í  [möppuni](./forritið/Audioplayer/GÖGN/)
 5. ps við vitum að meirihluti af þessum verkefnum er eiginlega það sama (við náðum ekki að gera meira fyrir skil)
 
